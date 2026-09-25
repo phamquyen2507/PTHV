@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Hệ Thống Phân Tích Hành Vi</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #f4f4f9; padding: 20px; }
+        h1 { color: #333; }
+        .video-container { margin-top: 20px; }
+        img { border: 3px solid #333; border-radius: 8px; width: 640px; height: 480px; }
+    </style>
+</head>
+<body>
+    <h1>Hệ Thống Phân Tích Hành Vi AI</h1>
+    <div class="video-container">
+        <!-- Luồng video từ Server Flask sẽ hiển thị trực tiếp ở đây -->
+        <img src="{{ url_for('video_feed') }}" alt="Camera Stream">
+    </div>
+</body>
+</html>
